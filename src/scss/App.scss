@@ -9,7 +9,7 @@
 $color-1: #bdd1cb;
 $color-2: #f7b0a1;
 
-@import "menu";
+@import "about";
 @import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
 
@@ -22,6 +22,33 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+}
+
+.menu {
+  width: 15%;
+  max-width: 150px;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      img {
+        width: 140px;
+      }
+      h3 {
+        font-family: "Inconsolata", monospace;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
 
 .home {
@@ -50,8 +77,27 @@ body {
     margin-left: 450px;
     box-shadow: -15px 17px 0px 0px rgba(0, 0, 0, 1);
     border: solid 4px;
+
     .div-top {
       @include divTop();
+    }
+    .div-main {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h1 {
+        font-family: "Suez One", serif;
+        font-size: 75px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        letter-spacing: 5px;
+      }
+      h3 {
+        font-family: "Inconsolata", monospace;
+        margin: 5px 0px;
+        font-size: 25px;
+        letter-spacing: 3px;
+      }
     }
   }
 }

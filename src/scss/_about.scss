@@ -1,0 +1,41 @@
+.about-me {
+  position: absolute;
+  z-index: 2;
+  width: 950px;
+  height: 600px;
+  background-color: $color-1;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-left: 50px;
+  border: solid 4px;
+  .div-top {
+    @include divTop();
+  }
+  .div-main {
+    display: flex;
+    .first {
+      .img {
+        width: 35%;
+      }
+      .info {
+        width: 65%;
+      }
+    }
+    .second {
+      .img {
+        width: 35%;
+      }
+      .info {
+        width: 65%;
+      }
+    }
+    .third {
+      .img {
+        width: 35%;
+      }
+      .info {
+        width: 65%;
+      }
+    }
+  }
+}
