@@ -2,31 +2,68 @@
   position: absolute;
   z-index: 2;
   width: 950px;
-  height: 600px;
+  height: 580px;
   background-color: $color-1;
   border-radius: 10px;
   margin-top: 40px;
   margin-left: 50px;
   border: solid 4px;
+  overflow-y: scroll;
   .div-top {
     @include divTop();
   }
   .div-main {
-    display: flex;
     .first {
+      display: flex;
+      margin: 50px 0px;
       .img {
-        width: 35%;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 350px;
+          border-radius: 10px;
+          border: solid 4px;
+        }
       }
       .info {
-        width: 65%;
+        width: 55%;
+        margin-right: 30px;
+        text-align: justify;
+        h2 {
+          font-family: "Suez One", serif;
+          font-size: 40px;
+          margin: 0 0 30px;
+        }
+        span {
+          font-family: "Inconsolata", monospace;
+          font-size: 25px;
+        }
       }
     }
     .second {
+      display: flex;
+      margin: 50px 0px;
       .img {
-        width: 35%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        img {
+          border-radius: 10px;
+          border: solid 4px;
+          width: 400px;
+        }
       }
       .info {
-        width: 65%;
+        width: 50%;
+        margin-left: 30px;
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+        span {
+          font-family: "Inconsolata", monospace;
+          font-size: 25px;
+        }
       }
     }
     .third {

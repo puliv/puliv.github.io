@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './scss/App.scss';
-// import openFile from '../assets/abierta.png'
+import openFile from './assets/abierta.png'
 import closedFile from './assets/cerrada.png'
 
 import AboutMe from './components/AboutMe';
@@ -10,9 +10,6 @@ import Contact from './components/Contact';
 
 function App() {
   const [file, setFile] = useState(null)
-  const [img, setImg] = useState(
-
-  )
 
   return (
     <div className="App">
@@ -38,19 +35,19 @@ function App() {
       <div className="menu">
         <ul>
           <li onClick={() => setFile("about")}>
-            <img src={closedFile} alt="file" />
+            <img src={file === "about" ? openFile : closedFile} alt="file" />
             <h3>Sobre mí</h3>
           </li>
           <li onClick={() => setFile("skills")}>
-            <img src={closedFile} alt="file" />
+            <img src={file === "skills" ? openFile : closedFile} alt="file" />
             <h3>Habilidades</h3>
           </li>
           <li onClick={() => setFile("projects")}>
-            <img src={closedFile} alt="file" />
+            <img src={file === "projects" ? openFile : closedFile} alt="file" />
             <h3>Projectos</h3>
           </li>
           <li onClick={() => setFile("contact")}>
-            <img src={closedFile} alt="file" />
+            <img src={file === "contact" ? openFile : closedFile} alt="file" />
             <h3>Contacto</h3>
           </li>
         </ul>

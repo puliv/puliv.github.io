@@ -1,4 +1,6 @@
 import React from 'react'
+import aboutme from '../assets/about-me.png'
+import vikingas from '../assets/vikingas.png'
 
 function AboutMe() {
   return (
@@ -7,6 +9,7 @@ function AboutMe() {
       <div className="div-main">
         <div className="first">
           <div className="img">
+            <img src={aboutme} alt="me" />
           </div>
           <div className="info">
             <h2>Sobre Mi</h2>
@@ -14,10 +17,14 @@ function AboutMe() {
           </div>
         </div>
         <div className="second">
-          <div className="img">
-          </div>
           <div className="info">
-            <span>parrafo</span>
+            <span> Soy egresada de la séptima generación de <a href="https://www.laboratoria.la/" target="_blank"
+              rel="noopener noreferrer"
+              className="about-me-a">Laboratoria</a>, un bootcamp intensivo de programación donde además de aprender desarrollo web, nos entregaron un montón de herramientas para trabajar en equipo, y para crecer tanto profesional como personalmente. Sin duda una experiencia que cambio mi vida.
+            </span>
+          </div>
+          <div className="img">
+            <img src={vikingas} alt="vikingas" />
           </div>
         </div>
         <div className="third">
