@@ -3,4 +3,23 @@
   .div-top {
     @include divTop();
   }
+  .div-main {
+    height: 460px;
+    display: flex;
+    margin-top: 40px;
+    .info {
+      width: 50%;
+      text-align: justify;
+      margin: 0 30px;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+    }
+    .img {
+      width: 50%;
+    }
+  }
 }
