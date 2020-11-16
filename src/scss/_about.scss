@@ -1,18 +1,11 @@
 .about-me {
-  position: absolute;
-  z-index: 2;
-  width: 950px;
-  height: 580px;
-  background-color: $color-1;
-  border-radius: 10px;
-  margin-top: 40px;
-  margin-left: 50px;
-  border: solid 4px;
-  overflow-y: scroll;
+  @include divFile();
   .div-top {
     @include divTop();
   }
   .div-main {
+    overflow-y: scroll;
+    height: 551px;
     .first {
       display: flex;
       margin: 50px 0px;
@@ -30,15 +23,6 @@
         width: 55%;
         margin-right: 30px;
         text-align: justify;
-        h2 {
-          font-family: "Suez One", serif;
-          font-size: 40px;
-          margin: 0 0 30px;
-        }
-        span {
-          font-family: "Inconsolata", monospace;
-          font-size: 25px;
-        }
       }
     }
     .second {
@@ -57,22 +41,59 @@
       .info {
         width: 50%;
         margin-left: 30px;
+        margin-top: 30px;
         text-align: justify;
         display: flex;
         justify-content: center;
-        span {
-          font-family: "Inconsolata", monospace;
-          font-size: 25px;
-        }
       }
     }
     .third {
+      display: flex;
+      margin: 50px 0px;
       .img {
-        width: 35%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        img {
+          border-radius: 10px;
+          border: solid 4px;
+          width: 400px;
+        }
       }
       .info {
-        width: 65%;
+        width: 50%;
+        text-align: justify;
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+        margin-top: 30px;
       }
     }
   }
+}
+
+// ScrollBar
+/* width */
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $color-2;
+  border-left: solid 4px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-2;
+  border-top: solid 4px;
+  border-left: solid 4px;
+  border-bottom: solid 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e29f92;
 }

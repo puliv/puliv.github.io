@@ -1,11 +1,16 @@
 import React from 'react'
 import aboutme from '../assets/about-me.png'
 import vikingas from '../assets/vikingas.png'
+import metro from '../assets/metro.jpg'
+import close from '../assets/cancel.png'
+
 
 function AboutMe() {
   return (
     <div className="about-me">
-      <div className="div-top" />
+      <div className="div-top">
+        <img src={close} alt="close" />
+      </div>
       <div className="div-main">
         <div className="first">
           <div className="img">
@@ -13,14 +18,13 @@ function AboutMe() {
           </div>
           <div className="info">
             <h2>Sobre Mi</h2>
-            <span>Hola! Mi nombre es Paulina, pero todos me conocen como Pulié, soy una entusiasta del Diseño, siempre en búsqueda de nuevos conocimientos y experiencias, me fascina el mundo de la tecnología, y el impacto que tiene en las personas. Por eso me gusta crear cosas que transmitan una idea y que contribuyan a la vida de los usuarios de forma creativa e innovadora.</span>
+            <span>Hola! Mi nombre es Paulina Vera, todos me conocen como Pulié, vivo en Santiago de Chile, soy una entusiasta del Diseño, siempre en búsqueda de nuevos conocimientos y experiencias, me fascina el mundo de la tecnología, y el impacto que tiene en las personas. Por eso me gusta crear cosas que transmitan una idea y que contribuyan a la vida de los usuarios de forma creativa e innovadora.</span>
           </div>
         </div>
         <div className="second">
           <div className="info">
-            <span> Soy egresada de la séptima generación de <a href="https://www.laboratoria.la/" target="_blank"
-              rel="noopener noreferrer"
-              className="about-me-a">Laboratoria</a>, un bootcamp intensivo de programación donde además de aprender desarrollo web, nos entregaron un montón de herramientas para trabajar en equipo, y para crecer tanto profesional como personalmente. Sin duda una experiencia que cambio mi vida.
+            <span>Soy egresada de la séptima generación de <a href="https://www.laboratoria.la/" target="_blank"
+              rel="noopener noreferrer">Laboratoria</a>, un bootcamp intensivo de programación donde además de aprender desarrollo web, nos entregaron un montón de herramientas para trabajar en equipo, y para crecer tanto profesional como personalmente. Sin duda, una experiencia que cambio mi vida.
             </span>
           </div>
           <div className="img">
@@ -29,13 +33,16 @@ function AboutMe() {
         </div>
         <div className="third">
           <div className="img">
+            <img src={metro} alt="rollerderby" />
           </div>
           <div className="info">
-            <span>parrafo</span>
+            <span>Y cuando no estoy codeando dedico mi tiempo libre a aprender nuevas formas de expresar mis ideas, ilustrar cosas que me gustan, o salir a patinar con mis amigas ♥ si te interesa ver más sobre mis ilustraciones puedes visitar mi perfil en <a href="https://www.behance.net/pulie" target="_blank"
+              rel="noopener noreferrer">Behance</a>.
+            </span>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

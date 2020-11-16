@@ -8,8 +8,9 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
+
 function App() {
-  const [file, setFile] = useState(null)
+  const [file, setFile] = useState()
 
   return (
     <div className="App">
@@ -21,7 +22,7 @@ function App() {
           {file === "contact" && <Contact />}
         </div>
         <div className="box-2">
-          <div className="div-top" />
+          <div className="div-top-home" />
           <div className="div-main">
             <h1>Pulié</h1>
             <h3>FRONT END</h3>
@@ -29,7 +30,7 @@ function App() {
           </div>
         </div>
         <div className="box-1">
-          <div className="div-top" />
+          <div className="div-top-home" />
         </div>
       </div>
       <div className="menu">

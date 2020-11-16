@@ -1,0 +1,19 @@
+.skills {
+  @include divFile();
+  .div-top {
+    @include divTop();
+  }
+  .div-main {
+    height: 551px;
+    display: flex;
+    margin: 50px 0px;
+    .info {
+      width: 50%;
+      text-align: justify;
+      margin: 0 30px;
+    }
+    .img {
+      width: 50%;
+    }
+  }
+}
