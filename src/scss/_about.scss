@@ -5,7 +5,7 @@
   }
   .div-main {
     overflow-y: scroll;
-    height: 501px;
+    height: 460px;
     .first {
       display: flex;
       margin: 50px 0px;
@@ -70,30 +70,4 @@
       }
     }
   }
-}
-
-// ScrollBar
-/* width */
-::-webkit-scrollbar {
-  width: 30px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: $color-2;
-  border-left: solid 4px;
-  border-bottom-right-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $color-2;
-  border-top: solid 4px;
-  border-left: solid 4px;
-  border-bottom: solid 4px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #e29f92;
 }

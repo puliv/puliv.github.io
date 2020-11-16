@@ -3,4 +3,9 @@
   .div-top {
     @include divTop();
   }
+  .div-main {
+    height: 460px;
+    display: flex;
+    margin-top: 40px;
+  }
 }

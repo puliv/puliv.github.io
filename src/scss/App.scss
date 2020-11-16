@@ -51,6 +51,16 @@ body {
     margin: 0 0 30px;
     font-family: "Suez One", serif;
   }
+  a {
+    color: #000;
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    font-weight: normal;
+    text-decoration: underline;
+  }
 }
 
 .menu {
