@@ -3,6 +3,7 @@ import aboutme from '../assets/about-me.png'
 import vikingas from '../assets/vikingas.png'
 import metro from '../assets/metro.jpg'
 import close from '../assets/cancel.png'
+import down from '../assets/down-arrow.png'
 
 
 function AboutMe() {
@@ -19,6 +20,7 @@ function AboutMe() {
           <div className="info">
             <h2>Sobre Mí</h2>
             <span>Hola! Mi nombre es Paulina Vera, todos me conocen como Pulié, vivo en Santiago de Chile, soy una entusiasta del Diseño, siempre en búsqueda de nuevos conocimientos y experiencias, me fascina el mundo de la tecnología, y el impacto que tiene en las personas. Por eso me gusta crear cosas que transmitan una idea y que contribuyan a la vida de los usuarios de forma creativa e innovadora.</span>
+            <img src={down} alt="abajo" />
           </div>
         </div>
         <div className="second">

@@ -5,7 +5,7 @@
   }
   .div-main {
     overflow-y: scroll;
-    height: 460px;
+    height: 501px;
     .first {
       display: flex;
       margin: 50px 0px;
@@ -23,6 +23,11 @@
         width: 55%;
         margin-right: 30px;
         text-align: justify;
+        img {
+          height: 45px;
+          float: right;
+          margin-top: 20px;
+        }
       }
     }
     .second {

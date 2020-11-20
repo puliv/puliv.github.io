@@ -5,7 +5,31 @@
   }
   .div-main {
     height: 460px;
-    display: flex;
     margin-top: 40px;
+    .info {
+      height: 15%;
+      text-align: justify;
+      margin-left: 30px;
+    }
+    .div-projects {
+      height: 85%;
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 30px 0;
+      .tania-silva,
+      .popcorn {
+        width: 50%;
+        cursor: pointer;
+        img {
+          width: 398px;
+          border: solid 4px;
+          border-radius: 10px;
+        }
+        span {
+          margin-left: 10px;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
