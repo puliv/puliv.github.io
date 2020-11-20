@@ -28,6 +28,18 @@
           float: right;
           margin-top: 20px;
           cursor: pointer;
+          @include floating(floating-arrow, 3s);
+        }
+        @keyframes floating-arrow {
+          0% {
+            transform: translate(0, 0px);
+          }
+          50% {
+            transform: translate(0, 10px);
+          }
+          100% {
+            transform: translate(0, -0px);
+          }
         }
       }
     }

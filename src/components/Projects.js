@@ -16,19 +16,17 @@ function Projects(props) {
         </div>
         <div className="div-projects">
           <div className="tania-silva" onClick={() => window.open("https://taniasilvatala.netlify.app/", "_blank")}>
-            <div>
+            <div className="projects-img">
+              <p>Portafolio Web para Tania Silva, diseñadora UX; desarrollado con Gatsby y Sass.</p>
               <img src={taniasilva} alt="taniaSilva" />
-            </div>
-            <div>
               <span>Portafolio Tania Silva</span>
             </div>
           </div>
           <div className="popcorn" onClick={() => window.open("https://puliv.github.io/SCL007-hackathon-peliculas/", "_blank")}>
-            <div>
+            <div className="projects-img">
+              <p>Sitio web que recomienda peliculas y comida para acompañar. Proyecto realizado en la primera Hackaton de mi generación.</p>
               <img src={popcorn} alt="popcorn" />
-            </div>
-            <div>
-              <span>Popcorn Night</span>
+              <span>PopCorn Night</span>
             </div>
           </div>
         </div>

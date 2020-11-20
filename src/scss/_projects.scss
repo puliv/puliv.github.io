@@ -29,6 +29,28 @@
           margin-left: 10px;
           font-weight: bold;
         }
+        span:hover {
+          font-weight: normal;
+          text-decoration: underline;
+        }
+        .projects-img p {
+          top: 170px;
+          position: absolute;
+          visibility: hidden;
+          background-color: black;
+          opacity: 0.8;
+          width: 355px;
+          height: 162px;
+          border-radius: 10px;
+          color: white;
+          font-family: "Inconsolata", monospace;
+          font-size: 20px;
+          text-align: justify;
+          padding: 60px 25px 0;
+        }
+        .projects-img:hover p {
+          visibility: visible;
+        }
       }
     }
   }
