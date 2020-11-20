@@ -6,6 +6,7 @@ import {
   Linkedin,
   Behance
 } from '@icons-pack/react-simple-icons';
+import contact from '../assets/contact.png'
 
 function Contact(props) {
   return (
@@ -52,7 +53,9 @@ function Contact(props) {
             </li>
           </ul>
         </div>
-        <div className="img"></div>
+        <div className="img">
+          <img src={contact} alt="contactImg" />
+        </div>
       </div>
     </div>
   )

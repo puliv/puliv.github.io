@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './scss/App.scss';
 import openFile from './assets/abierta.png'
 import closedFile from './assets/cerrada.png'
-import shine from './assets/shine_1.png'
-import shine1 from './assets/shine-1.png'
+import shine from './assets/shine.png'
+import boxBottom from './assets/box-bottom.png'
 
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
@@ -69,8 +69,11 @@ function App() {
 
         <div className="box-1">
           <div className="div-top-home" />
+          <div className="div-main-home">
+            <img src={boxBottom} alt="bottom" />
+          </div>
         </div>
-        <img src={shine1} alt="brillos" className="shine-1" />
+        <img src={shine} alt="brillos" className="shine-1" />
         <img src={shine} alt="brillos" className="shine-2" />
       </div>
       <div className="menu">

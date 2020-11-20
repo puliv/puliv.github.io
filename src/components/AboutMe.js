@@ -26,7 +26,7 @@ function AboutMe(props) {
           </div>
           <div className="info">
             <h2>Sobre Mí</h2>
-            <span>Hola! Mi nombre es Paulina Vera, todos me conocen como Pulié, vivo en Santiago de Chile, soy una entusiasta del Diseño, siempre en búsqueda de nuevos conocimientos y experiencias, me fascina el mundo de la tecnología, y el impacto que tiene en las personas. Por eso me gusta crear cosas que transmitan una idea y que contribuyan a la vida de los usuarios de forma creativa e innovadora.</span>
+            <span>Hola! Mi nombre es Paulina Vera, todos me conocen como Pulié, vivo en Santiago de Chile, soy una entusiasta del Diseño, siempre en búsqueda de nuevos conocimientos y experiencias, me fascina el mundo de la tecnología, y el impacto que tiene en las personas. Por eso me gusta crear obras que transmitan una idea y que contribuyan a la vida de los usuarios de forma creativa e innovadora.</span>
             <img src={down} alt="abajo" onClick={() => handleScroll(secondDivRef)} />
           </div>
         </div>
@@ -45,7 +45,7 @@ function AboutMe(props) {
             <img src={metro} alt="rollerderby" />
           </div>
           <div className="info">
-            <span>Y cuando no estoy codeando salgo a patinar con mis amigas ♥ también dedico gran parte de mi tiempo libre a aprender nuevas formas de expresar mis ideas o a ilustrar cosas que me gustan, si te interesa ver más sobre mis ilustraciones puedes visitar mi perfil en <a href="https://www.behance.net/pulie" target="_blank"
+            <span>Y cuando no estoy codeando salgo a patinar con mis amigas ♥ también dedico gran parte de mi tiempo libre a aprender nuevas formas de expresar mis ideas y a ilustrar todo lo que me inspire, si te interesa ver más sobre esto puedes visitar mi perfil en <a href="https://www.behance.net/pulie" target="_blank"
               rel="noopener noreferrer">Behance</a>.
             </span>
           </div>

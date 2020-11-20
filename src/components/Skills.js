@@ -23,7 +23,7 @@ function Skills(props) {
       <div className="div-main">
         <div className="info">
           <h2>Habilidades</h2>
-          <span>He trabajado principalmente con React JS y Redux, pero también tengo experiencia desarrollando con JavaScript, HTML y CSS. Ocupo Git y GitHub para manejar el versionamiento de mi código y tanto Adobe Illustrator como Photoshop los uso en gran parte para proyectos personales y pequeños trabajos de ilustración.</span>
+          <span>He trabajado principalmente con React JS y Redux, pero también tengo experiencia desarrollando con JavaScript, HTML y CSS. Ocupo Git y GitHub para manejar el versionamiento de mi código y tanto Adobe Illustrator como Photoshop los uso en gran parte para proyectos personales y trabajos de ilustración.</span>
         </div>
         <div className="icons">
           <div className="div-icons">
