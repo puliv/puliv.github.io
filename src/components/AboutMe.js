@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createRef } from 'react'
 import aboutme from '../assets/about-me.png'
 import vikingas from '../assets/vikingas.png'
 import metro from '../assets/metro.jpg'
@@ -6,11 +6,18 @@ import close from '../assets/cancel.png'
 import down from '../assets/down-arrow.png'
 
 
-function AboutMe() {
+function AboutMe(props) {
+  const secondDivRef = createRef();
+
+  const handleScroll = ref => {
+    const elem = ref.current
+    elem.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }
+
   return (
     <div className="about-me">
       <div className="div-top">
-        <img src={close} alt="close" />
+        <img src={close} alt="close" onClick={() => props.handleClick("about")} />
       </div>
       <div className="div-main">
         <div className="first">
@@ -20,10 +27,10 @@ function AboutMe() {
           <div className="info">
             <h2>Sobre Mí</h2>
             <span>Hola! Mi nombre es Paulina Vera, todos me conocen como Pulié, vivo en Santiago de Chile, soy una entusiasta del Diseño, siempre en búsqueda de nuevos conocimientos y experiencias, me fascina el mundo de la tecnología, y el impacto que tiene en las personas. Por eso me gusta crear cosas que transmitan una idea y que contribuyan a la vida de los usuarios de forma creativa e innovadora.</span>
-            <img src={down} alt="abajo" />
+            <img src={down} alt="abajo" onClick={() => handleScroll(secondDivRef)} />
           </div>
         </div>
-        <div className="second">
+        <div className="second" ref={secondDivRef}>
           <div className="info">
             <span>Soy egresada de la séptima generación de <a href="https://www.laboratoria.la/" target="_blank"
               rel="noopener noreferrer">Laboratoria</a>, un bootcamp intensivo de programación donde además de aprender desarrollo web, nos entregaron un montón de herramientas para trabajar en equipo, y para crecer tanto profesional como personalmente. Sin duda, una experiencia que cambio mi vida.
@@ -38,7 +45,7 @@ function AboutMe() {
             <img src={metro} alt="rollerderby" />
           </div>
           <div className="info">
-            <span>Y cuando no estoy codeando dedico mi tiempo libre a aprender nuevas formas de expresar mis ideas, ilustrar cosas que me gustan, o salir a patinar con mis amigas ♥ si te interesa ver más sobre mis ilustraciones puedes visitar mi perfil en <a href="https://www.behance.net/pulie" target="_blank"
+            <span>Y cuando no estoy codeando salgo a patinar con mis amigas ♥ también dedico gran parte de mi tiempo libre a aprender nuevas formas de expresar mis ideas o a ilustrar cosas que me gustan, si te interesa ver más sobre mis ilustraciones puedes visitar mi perfil en <a href="https://www.behance.net/pulie" target="_blank"
               rel="noopener noreferrer">Behance</a>.
             </span>
           </div>

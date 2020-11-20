@@ -50,10 +50,10 @@ function App() {
     <div className="App">
       <div className="home">
         <div className="files">
-          {about && <AboutMe />}
-          {skills && <Skills />}
-          {projects && <Projects />}
-          {contact && <Contact />}
+          {about && <AboutMe handleClick={handleClick} />}
+          {skills && <Skills handleClick={handleClick} />}
+          {projects && <Projects handleClick={handleClick} />}
+          {contact && <Contact handleClick={handleClick} />}
         </div>
         <div className="box-2">
           <div className="div-top-home" />
@@ -70,19 +70,19 @@ function App() {
       <div className="menu">
         <ul>
           <li onClick={() => handleClick("about")}>
-            <img src={about ? openFile : closedFile} alt="file" />
+            {about ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
             <h3>Sobre mí</h3>
           </li>
           <li onClick={() => handleClick("skills")}>
-            <img src={skills ? openFile : closedFile} alt="file" />
+            {skills ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
             <h3>Habilidades</h3>
           </li>
           <li onClick={() => handleClick("projects")}>
-            <img src={projects ? openFile : closedFile} alt="file" />
+            {projects ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
             <h3>Projectos</h3>
           </li>
           <li onClick={() => handleClick("contact")}>
-            <img src={contact ? openFile : closedFile} alt="file" />
+            {contact ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
             <h3>Contacto</h3>
           </li>
         </ul>
