@@ -4,6 +4,7 @@ import openFile from './assets/abierta.png'
 import closedFile from './assets/cerrada.png'
 import shine from './assets/shine.png'
 import boxBottom from './assets/box-bottom.png'
+import menu from './assets/menu-icon.png'
 
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
@@ -57,7 +58,6 @@ function App() {
           {projects && <Projects handleClick={handleClick} />}
           {contact && <Contact handleClick={handleClick} />}
         </div>
-
         <div className="box-2">
           <div className="div-top-home" />
           <div className="div-main">
@@ -66,7 +66,6 @@ function App() {
             <h3>DEVELOPER</h3>
           </div>
         </div>
-
         <div className="box-1">
           <div className="div-top-home" />
           <div className="div-main-home">
@@ -76,7 +75,10 @@ function App() {
         <img src={shine} alt="brillos" className="shine-1" />
         <img src={shine} alt="brillos" className="shine-2" />
       </div>
+
       <div className="menu">
+        <img src={menu} alt="menu" className="menu-icon" />
+
         <ul>
           <li onClick={() => handleClick("about")}>
             {about ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
