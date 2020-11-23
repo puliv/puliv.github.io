@@ -8,7 +8,7 @@ function Projects(props) {
   return (
     <div className="projects">
       <div className="div-top">
-        <img src={close} alt="close" onClick={() => props.handleClick("projects")} />
+        <img src={close} alt="close" onClick={() => props.handleFiles("projects")} />
       </div>
       <div className="div-main">
         <div className="info">

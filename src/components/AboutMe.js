@@ -17,7 +17,7 @@ function AboutMe(props) {
   return (
     <div className="about-me">
       <div className="div-top">
-        <img src={close} alt="close" onClick={() => props.handleClick("about")} />
+        <img src={close} alt="close" onClick={() => props.handleFiles("about")} />
       </div>
       <div className="div-main">
         <div className="first">

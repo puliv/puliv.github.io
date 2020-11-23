@@ -18,7 +18,7 @@ function Skills(props) {
   return (
     <div className="skills">
       <div className="div-top">
-        <img src={close} alt="close" onClick={() => props.handleClick("skills")} />
+        <img src={close} alt="close" onClick={() => props.handleFiles("skills")} />
       </div>
       <div className="div-main">
         <div className="info">

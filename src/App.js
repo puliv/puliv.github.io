@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import c from 'classnames'
+
 import './scss/App.scss';
 import openFile from './assets/abierta.png'
 import closedFile from './assets/cerrada.png'
@@ -17,8 +19,9 @@ function App() {
   const [skills, setSkills] = useState(false)
   const [projects, setProjects] = useState(false)
   const [contact, setContact] = useState(false)
+  const [openMenuMobile, setOpenMenuMobile] = useState(false)
 
-  const handleClick = (file) => {
+  const handleFiles = (file) => {
     switch (file) {
       case "about":
         setAbout(!about)
@@ -53,10 +56,10 @@ function App() {
     <div className="App">
       <div className="home">
         <div className="files">
-          {about && <AboutMe handleClick={handleClick} />}
-          {skills && <Skills handleClick={handleClick} />}
-          {projects && <Projects handleClick={handleClick} />}
-          {contact && <Contact handleClick={handleClick} />}
+          {about && <AboutMe handleFiles={handleFiles} />}
+          {skills && <Skills handleFiles={handleFiles} />}
+          {projects && <Projects handleFiles={handleFiles} />}
+          {contact && <Contact handleFiles={handleFiles} />}
         </div>
         <div className="box-2">
           <div className="div-top-home" />
@@ -77,22 +80,25 @@ function App() {
       </div>
 
       <div className="menu">
-        <img src={menu} alt="menu" className="menu-icon" />
-
-        <ul>
-          <li onClick={() => handleClick("about")}>
+        <img
+          src={menu}
+          alt="menu"
+          className="menu-icon"
+          onClick={() => setOpenMenuMobile(!openMenuMobile)} />
+        <ul className={c("file-menu", { active: openMenuMobile })}>
+          <li onClick={() => handleFiles("about")}>
             {about ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
             <h3>Sobre mí</h3>
           </li>
-          <li onClick={() => handleClick("skills")}>
+          <li onClick={() => handleFiles("skills")}>
             {skills ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
             <h3>Habilidades</h3>
           </li>
-          <li onClick={() => handleClick("projects")}>
+          <li onClick={() => handleFiles("projects")}>
             {projects ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
             <h3>Projectos</h3>
           </li>
-          <li onClick={() => handleClick("contact")}>
+          <li onClick={() => handleFiles("contact")}>
             {contact ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
             <h3>Contacto</h3>
           </li>
@@ -103,3 +109,4 @@ function App() {
 }
 
 export default App;
+

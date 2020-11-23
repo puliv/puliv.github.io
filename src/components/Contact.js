@@ -12,7 +12,7 @@ function Contact(props) {
   return (
     <div className="contact">
       <div className="div-top">
-        <img src={close} alt="close" onClick={() => props.handleClick("contact")} />
+        <img src={close} alt="close" onClick={() => props.handleFiles("contact")} />
       </div>
       <div className="div-main">
         <div className="info">
