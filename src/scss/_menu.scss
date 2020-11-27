@@ -26,6 +26,7 @@
       justify-content: center;
       align-items: center;
       visibility: hidden;
+      display: none;
       -webkit-transition: all 0.5s ease-in-out;
       -moz-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
@@ -54,18 +55,24 @@
           -moz-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out;
         }
+        @include media(sm-b) {
+          width: 90px;
+        }
       }
       h3 {
+        color: initial;
         font-family: "Inconsolata", monospace;
         font-weight: 700;
         font-size: 20px;
         margin-top: 10px;
         margin-bottom: 30px;
-        visibility: hidden;
-        opacity: 0;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
+        @include media(lg) {
+          visibility: hidden;
+          opacity: 0;
+        }
       }
     }
   }
@@ -74,6 +81,7 @@
     width: 200px;
     position: relative;
     visibility: visible;
+    display: flex;
     li {
       .close-file,
       h3 {
@@ -86,7 +94,7 @@
     display: none;
     width: 35px;
     float: right;
-    margin-top: 6px;
+    margin-top: 5px;
     margin-right: 10px;
     cursor: pointer;
     @include media(lg) {

@@ -86,7 +86,7 @@ function App() {
           className="menu-icon"
           onClick={() => setOpenMenuMobile(!openMenuMobile)} />
         <ul className={c("file-menu", { active: openMenuMobile })}>
-          <li onClick={() => handleFiles("about")}>
+          <li onClick={() => handleFiles("about")} style={{ marginTop: "10px" }}>
             {about ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}
             <h3>Sobre mí</h3>
           </li>

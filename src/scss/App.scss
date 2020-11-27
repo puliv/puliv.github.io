@@ -9,15 +9,15 @@ $breakpoint-lg: 1230px;
 
 @mixin media($media) {
   @if $media == xs {
-    @media (min-width: $breakpoint-sm) {
+    @media (max-width: $breakpoint-xs) {
       @content;
     }
   } @else if $media == sm {
-    @media (min-width: $breakpoint-sm) {
+    @media (max-width: $breakpoint-sm) {
       @content;
     }
   } @else if $media == sm-b {
-    @media (min-width: $breakpoint-sm-b) {
+    @media (max-width: $breakpoint-sm-b) {
       @content;
     }
   } @else if $media == md {
