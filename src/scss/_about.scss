@@ -6,13 +6,24 @@
   .div-main {
     overflow-y: scroll;
     height: 501px;
+    @include media(lg) {
+      height: 95%;
+      margin-bottom: 10px;
+    }
     .first {
       display: flex;
       margin: 50px 0px;
+      @include media(lg) {
+        flex-direction: column-reverse;
+        margin: 30px;
+      }
       .img {
         width: 45%;
         display: flex;
         justify-content: center;
+        @include media(lg) {
+          width: 100%;
+        }
         img {
           width: 350px;
           border-radius: 10px;
@@ -23,11 +34,18 @@
         width: 55%;
         margin-right: 30px;
         text-align: justify;
+        @include media(lg) {
+          width: 100%;
+          margin-bottom: 30px;
+        }
         img {
           height: 45px;
           float: right;
           margin-top: 20px;
           cursor: pointer;
+          @include media(lg) {
+            display: none;
+          }
           @include floating(floating-arrow, 3s);
         }
         @keyframes floating-arrow {
@@ -46,10 +64,17 @@
     .second {
       display: flex;
       margin: 50px 0px;
+      @include media(lg) {
+        flex-direction: column;
+        margin: 30px;
+      }
       .img {
         width: 50%;
         display: flex;
         justify-content: center;
+        @include media(lg) {
+          width: 100%;
+        }
         img {
           border-radius: 10px;
           border: solid 4px;
@@ -63,15 +88,28 @@
         text-align: justify;
         display: flex;
         justify-content: center;
+        @include media(lg) {
+          width: 100%;
+          margin-left: 0px;
+          margin-top: 0px;
+          margin-bottom: 30px;
+        }
       }
     }
     .third {
       display: flex;
       margin: 50px 0px;
+      @include media(lg) {
+        flex-direction: column-reverse;
+        margin: 30px;
+      }
       .img {
         width: 50%;
         display: flex;
         justify-content: center;
+        @include media(lg) {
+          width: 100%;
+        }
         img {
           border-radius: 10px;
           border: solid 4px;
@@ -85,6 +123,12 @@
         justify-content: center;
         margin-right: 30px;
         margin-top: 30px;
+        @include media(lg) {
+          width: 100%;
+          margin-left: 0px;
+          margin-top: 0px;
+          margin-bottom: 30px;
+        }
       }
     }
   }

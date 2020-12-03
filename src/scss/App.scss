@@ -55,6 +55,16 @@ $breakpoint-lg: 1230px;
   margin-top: 50px;
   margin-left: 50px;
   border: solid 4px;
+  @include media(lg) {
+    width: 92vw;
+    height: 87vh;
+    margin-top: 15px;
+    margin-left: 4vw;
+  }
+  @include media(md){
+    margin-left: 3vw;
+
+  }
 }
 
 @mixin floating($name, $duration) {
