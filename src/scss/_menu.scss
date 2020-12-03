@@ -94,11 +94,14 @@
     display: none;
     width: 35px;
     float: right;
-    margin-top: 5px;
+    margin-top: 5.5px;
     margin-right: 10px;
     cursor: pointer;
     @include media(lg) {
       display: block;
+    }
+    @include media(sm) {
+      margin-top: 8px;
     }
   }
 }
