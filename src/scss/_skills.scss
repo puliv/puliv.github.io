@@ -5,19 +5,32 @@
   }
   .div-main {
     height: 500px;
-
     display: flex;
     margin-top: 40px;
+    @include media(lg) {
+      margin: 30px;
+      height: 83%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     .info {
       width: 45%;
       text-align: justify;
       margin-left: 30px;
+      @include media(lg) {
+        width: 100%;
+        height: 60%;
+        margin-left: 0px;
+      }
     }
     .icons {
       width: 55%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include media(lg) {
+        display: none;
+      }
       .div-icons {
         width: 100%;
         display: flex;
@@ -27,6 +40,45 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+        }
+      }
+    }
+    .icons-mobile {
+      display: none;
+      height: 40%;
+      @include media(lg) {
+        display: flex;
+        flex-direction: column;
+      }
+      @include media(xs-b) {
+        height: 22%;
+      }
+      .top,
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50%;
+        @include media(sm) {
+          align-items: flex-end;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          svg {
+            @include media(sm-b) {
+              width: 40px;
+            }
+            @include media(xs-b) {
+              width: 35px;
+            }
+          }
+          span {
+            @include media(sm) {
+              display: none;
+            }
+          }
         }
       }
     }

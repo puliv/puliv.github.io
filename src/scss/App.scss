@@ -2,6 +2,7 @@ $color-1: #bdd1cb;
 $color-2: #f7b0a1;
 
 $breakpoint-xs: 375px;
+$breakpoint-xs-b: 580px;
 $breakpoint-sm: 767px;
 $breakpoint-sm-b: 850px;
 $breakpoint-md: 1038px;
@@ -10,6 +11,10 @@ $breakpoint-lg: 1230px;
 @mixin media($media) {
   @if $media == xs {
     @media (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $media == xs-b {
+    @media (max-width: $breakpoint-xs-b) {
       @content;
     }
   } @else if $media == sm {
@@ -61,9 +66,8 @@ $breakpoint-lg: 1230px;
     margin-top: 15px;
     margin-left: 4vw;
   }
-  @include media(md){
+  @include media(md) {
     margin-left: 3vw;
-
   }
 }
 
@@ -98,6 +102,9 @@ body {
   span {
     font-family: "Inconsolata", monospace;
     font-size: 25px;
+    @include media(xs-b) {
+      font-size: 21px;
+    }
   }
   h2 {
     font-size: 40px;
