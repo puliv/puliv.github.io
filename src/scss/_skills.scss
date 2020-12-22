@@ -22,6 +22,24 @@
         height: 60%;
         margin-left: 0px;
       }
+      @include media(xs) {
+        letter-spacing: -0.6px;
+      }
+      @include media(xxs) {
+        letter-spacing: -1.2px;
+      }
+      span {
+        @include media(xs-b) {
+          font-size: 23px;
+          height: 70%;
+        }
+        @include media(xs-c) {
+          font-size: 21px;
+        }
+        @include media(xxs) {
+          font-size: 20px;
+        }
+      }
     }
     .icons {
       width: 55%;
@@ -49,6 +67,9 @@
       @include media(lg) {
         display: flex;
         flex-direction: column;
+      }
+      @include media(sm) {
+        height: 30%;
       }
       @include media(xs-b) {
         height: 22%;

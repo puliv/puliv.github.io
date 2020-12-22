@@ -1,7 +1,9 @@
 $color-1: #bdd1cb;
 $color-2: #f7b0a1;
 
+$breakpoint-xxs: 357px;
 $breakpoint-xs: 375px;
+$breakpoint-xs-c: 490px;
 $breakpoint-xs-b: 580px;
 $breakpoint-sm: 767px;
 $breakpoint-sm-b: 850px;
@@ -9,8 +11,16 @@ $breakpoint-md: 1038px;
 $breakpoint-lg: 1230px;
 
 @mixin media($media) {
-  @if $media == xs {
+  @if $media == xxs {
+    @media (max-width: $breakpoint-xxs) {
+      @content;
+    }
+  } @else if $media == xs {
     @media (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $media == xs-c {
+    @media (max-width: $breakpoint-xs-c) {
       @content;
     }
   } @else if $media == xs-b {
@@ -102,20 +112,26 @@ body {
   span {
     font-family: "Inconsolata", monospace;
     font-size: 25px;
-    @include media(xs-b) {
+    @include media(xs) {
       font-size: 21px;
     }
   }
   h2 {
     font-size: 40px;
-    margin: 0 0 30px;
     font-family: "Suez One", serif;
+    margin: 0 0 30px;
+    @include media(xs) {
+      margin: 0 0 15px;
+    }
   }
   a {
     color: #000;
     font-size: 26px;
     text-decoration: none;
     font-weight: bold;
+    @include media(xs) {
+      font-size: 23px;
+    }
   }
   a:hover {
     font-weight: normal;
