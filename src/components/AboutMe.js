@@ -33,7 +33,7 @@ function AboutMe(props) {
         <div className="second" ref={secondDivRef}>
           <div className="info">
             <span>Soy egresada de la séptima generación de <a href="https://www.laboratoria.la/" target="_blank"
-              rel="noopener noreferrer">Laboratoria</a>, un bootcamp intensivo de programación donde además de aprender desarrollo web, nos entregaron un montón de herramientas para trabajar en equipo, y para crecer tanto profesional como personalmente. Sin duda, una experiencia que cambio mi vida.
+              rel="noopener noreferrer">Laboratoria</a>, un bootcamp intensivo de programación donde además de aprender desarrollo web, nos entregaron un montón de herramientas para trabajar en equipo, y para crecer tanto profesional como personalmente. Sin duda, una experiencia que cambió mi vida.
             </span>
           </div>
           <div className="img">

@@ -28,6 +28,10 @@
           width: 350px;
           border-radius: 10px;
           border: solid 4px;
+          @include media(lg) {
+            object-fit: contain;
+            width: 100%;
+          }
         }
       }
       .info {
@@ -79,6 +83,10 @@
           border-radius: 10px;
           border: solid 4px;
           width: 400px;
+          @include media(lg) {
+            object-fit: contain;
+            width: 100%;
+          }
         }
       }
       .info {
@@ -114,6 +122,10 @@
           border-radius: 10px;
           border: solid 4px;
           width: 400px;
+          @include media(lg) {
+            object-fit: contain;
+            width: 100%;
+          }
         }
       }
       .info {

@@ -6,11 +6,26 @@
   .div-main {
     height: 465px;
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
+    @include media(sm-b) {
+      overflow-y: scroll;
+      height: 90vh;
+    }
+    @include media(xs-b) {
+      height: 80vh;
+      margin-top: 0px;
+    }
     .info {
       width: 50%;
       text-align: justify;
       margin: 0 30px;
+      @include media(md) {
+        width: 100%;
+      }
+      @include media(xs-b) {
+        margin-top: 30px;
+      }
+
       ul {
         list-style: none;
         display: flex;
@@ -29,8 +44,15 @@
     }
     .img {
       width: 50%;
+      @include media(md) {
+        display: none;
+      }
       img {
         width: 400px;
+        @include media(lg) {
+          width: 90%;
+          object-fit: contain;
+        }
       }
     }
   }
