@@ -79,7 +79,7 @@ function Skills(props) {
             </div>
           </div>
         </div>
-        <div className="icons-mobile">
+        <div className="icons-medium">
           <div className="top">
             <div>
               <ReactJs color="#000" size={50} />
@@ -119,6 +119,58 @@ function Skills(props) {
             <div>
               <Css3 color="#000" size={50} />
               <span>Css3</span>
+            </div>
+            <div>
+              <Adobeillustrator color="#000" size={50} />
+              <span>Illustrator</span>
+            </div>
+            <div>
+              <Adobephotoshop color="#000" size={50} />
+              <span>Photoshop</span>
+            </div>
+          </div>
+        </div>
+        <div className="icons-mobile">
+          <div className="top-mobile">
+            <div>
+              <ReactJs color="#000" size={50} />
+              <span>ReactJs</span>
+            </div>
+            <div>
+              <Redux color="#000" size={50} />
+              <span>Redux</span>
+            </div>
+            <div>
+              <Gatsby color="#000" size={50} />
+              <span>Gatsby</span>
+            </div>
+            <div>
+              <Sass color="#000" size={50} />
+              <span>Sass</span>
+            </div>
+          </div>
+          <div className="center-mobile">
+            <div>
+              <Html5 color="#000" size={50} />
+              <span>Html5</span>
+            </div>
+            <div>
+              <Javascript color="#000" size={50} />
+              <span>Javascript</span>
+            </div>
+            <div>
+              <Css3 color="#000" size={50} />
+              <span>Css3</span>
+            </div>
+          </div>
+          <div className="bottom-mobile">
+            <div>
+              <Git color="#000" size={50} />
+              <span>Git</span>
+            </div>
+            <div>
+              <Github color="#000" size={50} />
+              <span>GitHub</span>
             </div>
             <div>
               <Adobeillustrator color="#000" size={50} />
