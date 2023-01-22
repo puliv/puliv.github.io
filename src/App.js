@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import c from 'classnames'
 
 import './scss/App.scss';
-import openFile from './assets/abierta.png'
-import closedFile from './assets/cerrada.png'
-import shine from './assets/shine.png'
-import boxBottom from './assets/box-bottom.png'
-import menu from './assets/menu-icon.png'
+import './fonts/Subway-Black.ttf';
+import openFile from './images/abierta.png'
+import closedFile from './images/cerrada.png'
+import shine from './images/shine.png'
+import boxBottom from './images/box-bottom.png'
+import menu from './images/menu-icon.png'
 
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';

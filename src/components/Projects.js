@@ -1,15 +1,17 @@
 import React from 'react'
-import close from '../assets/cancel.png'
-import popcorn from '../assets/popcorn_nights.png'
-import taniasilva from '../assets/taniasilva.png'
+import popcorn from '../images/popcorn_nights.png'
+import taniasilva from '../images/taniasilva.png'
+import TopBar from './TopBar'
 
 
 function Projects(props) {
+  const handleClick = () => {
+    props.handleFiles("projects")
+  }
+
   return (
     <div className="projects">
-      <div className="div-top">
-        <img src={close} alt="close" onClick={() => props.handleFiles("projects")} />
-      </div>
+      <TopBar handleClick={handleClick} />
       <div className="div-main">
         <div className="info">
           <h2>Projectos</h2>

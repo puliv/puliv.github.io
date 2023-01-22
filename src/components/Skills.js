@@ -1,29 +1,31 @@
 import React from 'react'
-import close from '../assets/cancel.png'
 import {
   ReactJs,
-  Redux,
+  Jquery,
   Html5,
   Css3,
   Javascript,
-  Gatsby,
   Git,
   Github,
   Adobeillustrator,
   Adobephotoshop,
-  Sass
+  Sass,
+  VueDotJs
 } from '@icons-pack/react-simple-icons';
+import TopBar from '../components/TopBar'
 
 function Skills(props) {
+  const handleClick = () => {
+    props.handleFiles("skills")
+  }
   return (
     <div className="skills">
-      <div className="div-top">
-        <img src={close} alt="close" onClick={() => props.handleFiles("skills")} />
-      </div>
+      <TopBar handleClick={handleClick} />
       <div className="div-main">
         <div className="info">
           <h2>Habilidades</h2>
-          <span>He trabajado principalmente con React JS y Redux, pero también tengo experiencia desarrollando con JavaScript, HTML y CSS. Ocupo Git y GitHub para manejar el versionamiento de mi código y tanto Adobe Illustrator como Photoshop los uso en gran parte para proyectos personales y trabajos de ilustración.</span>
+          <span>He trabajado principalmente con Vue, React y Jquery, pero también tengo experiencia desarrollando con Vanilla JavaScript, HTML y CSS. Ocupo Git y GitHub para manejar el versionamiento de mi código y tanto Illustrator como Photoshop los uso para proyectos personales que puedes ver en mi <a href="https://www.behance.net/pulie" target="_blank"
+            rel="noopener noreferrer">Behance</a>.</span>
         </div>
         <div className="icons">
           <div className="div-icons">
@@ -32,12 +34,12 @@ function Skills(props) {
               <span>ReactJs</span>
             </div>
             <div>
-              <Redux color="#000" size={60} />
-              <span>Redux</span>
+              <Jquery color="#000" size={60} />
+              <span>Jquery</span>
             </div>
             <div>
-              <Gatsby color="#000" size={60} />
-              <span>Gatsby</span>
+              <VueDotJs color="#000" size={60} />
+              <span>VueDotJs</span>
             </div>
             <div>
               <Sass color="#000" size={60} />
@@ -86,12 +88,12 @@ function Skills(props) {
               <span>ReactJs</span>
             </div>
             <div>
-              <Redux color="#000" size={50} />
-              <span>Redux</span>
+              <Jquery color="#000" size={50} />
+              <span>Jquery</span>
             </div>
             <div>
-              <Gatsby color="#000" size={50} />
-              <span>Gatsby</span>
+              <VueDotJs color="#000" size={50} />
+              <span>VueDotJs</span>
             </div>
             <div>
               <Sass color="#000" size={50} />
@@ -137,12 +139,12 @@ function Skills(props) {
               <span>ReactJs</span>
             </div>
             <div>
-              <Redux color="#000" size={50} />
-              <span>Redux</span>
+              <Jquery color="#000" size={50} />
+              <span>Jquery</span>
             </div>
             <div>
-              <Gatsby color="#000" size={50} />
-              <span>Gatsby</span>
+              <VueDotJs color="#000" size={50} />
+              <span>VueDotJs</span>
             </div>
             <div>
               <Sass color="#000" size={50} />

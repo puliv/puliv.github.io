@@ -1,19 +1,21 @@
 import React from 'react'
-import close from '../assets/cancel.png'
 import {
   Gmail,
   Github,
   Linkedin,
   Behance
 } from '@icons-pack/react-simple-icons';
-import contact from '../assets/contact.png'
+import contact from '../images/contact.png'
+import TopBar from './TopBar';
 
 function Contact(props) {
+  const handleClick = () => {
+    props.handleFiles("contact")
+  }
+
   return (
     <div className="contact">
-      <div className="div-top">
-        <img src={close} alt="close" onClick={() => props.handleFiles("contact")} />
-      </div>
+      <TopBar handleClick={handleClick} />
       <div className="div-main">
         <div className="info">
           <h2>Contacto</h2>

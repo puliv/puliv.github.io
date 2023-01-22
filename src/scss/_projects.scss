@@ -1,8 +1,5 @@
 .projects {
   @include divFile();
-  .div-top {
-    @include divTop();
-  }
   .div-main {
     height: 460px;
     margin-top: 40px;

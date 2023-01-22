@@ -1,8 +1,5 @@
 .skills {
   @include divFile();
-  .div-top {
-    @include divTop();
-  }
   .div-main {
     height: 500px;
     display: flex;
