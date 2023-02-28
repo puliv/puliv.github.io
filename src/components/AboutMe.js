@@ -29,7 +29,7 @@ function AboutMe(props) {
           </div>
           <div className="info">
             <h2>Sobre Mí</h2>
-            <span>Hola! Mi nombre es Paulina Vera, también me conocen como Pulié, vivo en Santiago de Chile, soy una entusiasta del Diseño, siempre en búsqueda de nuevos conocimientos y experiencias, me fascina el mundo de la tecnología y el impacto que tiene en las personas.
+            <span>Hola! Mi nombre es Paulina Vera, también me conocen como Pulié, vivo en Santiago de Chile, soy una entusiasta del diseño, siempre en búsqueda de nuevos conocimientos y experiencias, me fascina el mundo de la tecnología y el impacto que tiene en las personas.
             </span>
             <img src={down} alt="abajo" onClick={() => handleScroll(secondDivRef)} />
           </div>

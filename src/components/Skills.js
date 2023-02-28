@@ -39,7 +39,7 @@ function Skills(props) {
             </div>
             <div>
               <VueDotJs color="#000" size={60} />
-              <span>VueDotJs</span>
+              <span>VueJs</span>
             </div>
             <div>
               <Sass color="#000" size={60} />
@@ -93,7 +93,7 @@ function Skills(props) {
             </div>
             <div>
               <VueDotJs color="#000" size={50} />
-              <span>VueDotJs</span>
+              <span>VueJs</span>
             </div>
             <div>
               <Sass color="#000" size={50} />
@@ -144,7 +144,7 @@ function Skills(props) {
             </div>
             <div>
               <VueDotJs color="#000" size={50} />
-              <span>VueDotJs</span>
+              <span>VueJs</span>
             </div>
             <div>
               <Sass color="#000" size={50} />

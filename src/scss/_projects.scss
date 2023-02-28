@@ -15,75 +15,62 @@
       @include media(md) {
         height: 10%;
         margin-top: 30px;
+        margin-bottom: 3%;
       }
     }
     .div-projects {
       height: 85%;
-      display: flex;
-      justify-content: space-between;
-      margin: 50px 30px 0;
+      padding: 0 15%;
       @include media(md) {
-        display: flex;
-        flex-direction: column;
-        height: 80%;
-        margin: 30px;
+        padding: 0 10%;
       }
-      .tania-silva,
-      .popcorn {
-        width: 50%;
+      @include media(sm-b) {
+        padding: 0 6%;
+      }      
+      .project {
         cursor: pointer;
-        @include media(md) {
-          width: 100%;
-          display: flex;
-          margin: 0 0 30px;
-        }
         img {
-          width: 398px;
+          object-fit: cover;
           border: solid 4px;
           border-radius: 10px;
-          @include media(md) {
-            object-fit: contain;
-            width: 100%;
-          }
         }
-        span {
-          margin-left: 10px;
-          font-weight: bold;
-          @include media(md) {
-            margin-bottom: 10px;
-          }
-        }
-        span:hover {
-          font-weight: normal;
-          text-decoration: underline;
-        }
-        .projects-img p {
-          top: 170px;
-          position: absolute;
-          visibility: hidden;
-          background-color: black;
-          opacity: 0.8;
-          width: 355px;
-          height: 162px;
-          border-radius: 10px;
+        p {
           color: white;
           font-family: "Inconsolata", monospace;
           font-size: 20px;
-          text-align: justify;
-          padding: 60px 25px 0;
+          text-align: left;
         }
-        .projects-img {
-          @include media(md) {
-            display: flex;
-            flex-direction: column-reverse;
-          }
+      }
+
+      .project-mobile {
+        display: none;
+        margin-bottom: 40px;
+        @include media(sm) {
+          display: flex;
+          flex-direction: column;
         }
-        .projects-img:hover p {
-          visibility: visible;
-          @include media(md) {
-            visibility: hidden;
-          }
+        p {
+          color: black;
+          margin-top: 0;
+          margin-bottom: 10px;
+          cursor: default;
         }
+        img {
+          cursor: pointer;
+        }
+      }
+
+      @include media(sm) {
+        .carousel-root {
+          display: none;
+        }
+      }
+      .carousel .slide .legend {
+        bottom: 20px;
+      }
+      .carousel .control-dots .dot {
+        background: $color-2;
+        box-shadow: none;
       }
     }
   }
