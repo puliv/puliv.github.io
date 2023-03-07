@@ -3,11 +3,10 @@ import c from 'classnames'
 
 import './scss/App.scss';
 import './fonts/Subway-Black.ttf';
-import openFile from './images/abierta.png'
-import closedFile from './images/cerrada.png'
+import openFile from './images/abierta_alt.png'
+import closedFile from './images/cerrada_alt.png'
 import shine from './images/shine.png'
 import boxBottom from './images/box-bottom.png'
-import menu from './images/menu-icon.png'
 
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
@@ -81,11 +80,14 @@ function App() {
       </div>
 
       <div className="menu">
-        <img
-          src={menu}
-          alt="menu"
-          className="menu-icon"
-          onClick={() => setOpenMenuMobile(!openMenuMobile)} />
+        <div
+          className={c("menu-toggle", { "on": openMenuMobile })}
+          onClick={() => setOpenMenuMobile(!openMenuMobile)}>
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+
         <ul className={c("file-menu", { active: openMenuMobile })}>
           <li onClick={() => handleFiles("about")} style={{ marginTop: "10px" }}>
             {about ? <img src={openFile} className="open-file" alt="file" /> : <img src={closedFile} className="close-file" alt="file" />}

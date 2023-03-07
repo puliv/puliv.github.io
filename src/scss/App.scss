@@ -1,5 +1,7 @@
 $color-1: #B2BEFA;
-$color-2: #f7b0a1;
+$color-2: #F194C0;
+// $color-2: #f7b0a1;
+
 
 $breakpoint-xxs: 357px;
 $breakpoint-xs: 375px;
@@ -91,6 +93,8 @@ $breakpoint-lg: 1230px;
 body {
   margin: 0;
   background-image: url("../images/fondo_.png");
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 .App {
