@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import c from 'classnames'
+import Typed from 'typed.js';
 
 import './scss/App.scss';
 import './fonts/Subway-Black.ttf';
 import openFile from './images/abierta_alt.png'
 import closedFile from './images/cerrada_alt.png'
-import shine from './images/shine.png'
-import boxBottom from './images/box-bottom.png'
 
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
@@ -52,6 +51,24 @@ function App() {
     }
   }
 
+  // Create reference to store the DOM element containing the animation
+  const el = useRef(null);
+  const typed = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: ['Hola!^400\nMi nombre es^200\nPaulina,^400\nsoy desarrolladora^200\nFront End.'],
+      typeSpeed: 50,
+      backSpeed: 50,
+    };
+    typed.current = new Typed(el.current, options);
+
+    return () => {
+      typed.current.destroy();
+    }
+  }, [])
+
+
   return (
     <div className="App">
       <div className="home">
@@ -72,20 +89,18 @@ function App() {
         <div className="box-1">
           <div className="div-top-home" />
           <div className="div-main-home">
-            <img src={boxBottom} alt="bottom" />
+            <span style={{ whiteSpace: 'pre' }} ref={el} />
           </div>
         </div>
-        <img src={shine} alt="brillos" className="shine-1" />
-        <img src={shine} alt="brillos" className="shine-2" />
       </div>
 
       <div className="menu">
         <div
           className={c("menu-toggle", { "on": openMenuMobile })}
           onClick={() => setOpenMenuMobile(!openMenuMobile)}>
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
+          <div className="one"></div>
+          <div className="two"></div>
+          <div className="three"></div>
         </div>
 
         <ul className={c("file-menu", { active: openMenuMobile })}>
